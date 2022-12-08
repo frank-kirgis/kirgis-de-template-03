@@ -1,0 +1,30 @@
+- var locale = "de_DE";
+- var title = "Datenschutz | Frank Kirgis";
+- var description = "Die Benutzung unserer Webseiten erfolgt auf freiwilliger Basis. Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst.";
+- var author = "Frank Kirgis";
+- var url = "https://www.e-commerce-manager.eu/datenschutz/";
+- var image  = "";
+
+doctype html
+html(lang='de')
+
+    head
+        include ../includes/head/meta.pug
+        include ../includes/head/link.pug
+        include ../includes/head/css.pug
+        include ../includes/head/favicons.pug
+
+    body.d-flex.flex-column.h-100
+
+        header
+            include ../includes/navbar/navbar-main.pug
+
+        main
+            include ../includes/datenschutz/section-top.pug
+            include ../includes/datenschutz/section-1.pug
+            include ../includes/datenschutz/section-2.pug
+            include ../includes/datenschutz/section-3.pug
+            include ../includes/datenschutz/section-4.pug
+
+        include ../includes/footer/footer-07.pug
+        include ../includes/scripts.pug

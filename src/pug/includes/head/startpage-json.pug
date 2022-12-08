@@ -1,0 +1,25 @@
+// startpage rich snippet
+script(type='application/ld+json').
+    {
+        "@context":"http://schema.org",
+        "@type":"Person",
+        "givenName":"Frank",
+        "familyName":"Kirgis",
+        "description":"#{description}",
+  "url":"#{url}",
+  "image":{
+      "@type":"ImageObject",
+      "url":"#{image}",
+      "width":"#{image_width}",
+      "height":"#{image_height}"
+    },
+    "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"Schloßstr. 8",
+        "addressLocality":"Bad Krozingen",
+        "addressRegion":"Baden-Württemberg",
+        "postalCode":"79189",
+        "addressCountry":"DE"
+    },
+    "telephone":"+49 (0)170 38 64 723"
+    }

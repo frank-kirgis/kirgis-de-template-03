@@ -1,0 +1,7 @@
+https://www.atatus.com/blog/minify-css-and-javascript-to-accelerate-website-speed/
+
+css-minify --file filename
+
+css-minify -d sourcedir
+
+css-minify --file dist\assets\theme\css\styles.css

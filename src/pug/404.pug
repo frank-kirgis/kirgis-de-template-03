@@ -1,0 +1,26 @@
+- var locale = "de_DE";
+- var title = "404 | E-Commerce Manager ";
+- var description = "Seite nicht gefunden";
+- var author = "Frank Kirgis";
+- var url = "https://www.e-commerce-manager.eu/404.html";
+- var image  = "";
+
+doctype html
+html(lang='de')
+
+    head
+        include includes/head/meta.pug
+        include includes/head/link.pug
+        include includes/head/css.pug
+        include includes/head/favicons.pug
+
+    body.d-flex.flex-column.h-100
+
+        header
+            include includes/navbar/navbar-main.pug
+
+        main
+            include includes/404/section-top.pug
+
+        include includes/footer/footer-07.pug
+        include includes/scripts.pug

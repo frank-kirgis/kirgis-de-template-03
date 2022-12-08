@@ -1,0 +1,44 @@
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+
+// Resets for body and html height for sticky footer
+body,
+html {
+  height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+// Custom SCSS for feature component with Bootstrap icon
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+// Background image for featured blog post
+.bg-featured-blog {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 15rem;
+}
+/* fonts */
+@font-face {
+    font-family: Optima;
+    font-weight: normal;
+    src: url("/assets/fonts/optima/OptimaLTPro-Roman.otf") format("opentype");
+}
+@font-face {
+    font-family: Optima;
+    font-weight: bold;
+    src: url("/assets/fonts/optima/OptimaLTPro-Bold.otf") format("opentype");
+}
