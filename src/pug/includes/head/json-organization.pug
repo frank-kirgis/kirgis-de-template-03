@@ -1,0 +1,37 @@
+// rich snippet
+script(type='application/ld+json').
+{
+    
+    "@context":"http://schema.org/",
+    "@type":"Organization",
+
+    "name":"Kirgis",
+    "description":"#{description}",
+    "url":"#{url}",
+
+    "image":{
+        "@type": "ImageObject",
+        "url":"#{image_url}",
+        "width": "#{image_width}",
+        "height": "#{image_height}"     
+    },
+
+    "logo": {
+        "@type": "ImageObject",
+        "url": "#{logo_url}",
+        "width": "#{logo_width}",
+        "height": "#{logo_height}"
+    }
+    
+    "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"Schloßstr. 8",
+        "addressLocality":"Bad Krozingen",
+        "addressRegion":"Baden-Württemberg",
+        "postalCode":"79189",
+        "addressCountry":"DE"
+    },
+    
+    "telephone":"+49 (0)170 38 64 723"
+    
+}

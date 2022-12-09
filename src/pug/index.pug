@@ -3,7 +3,10 @@
 - var description = "Frank Kirgis, Kay Kirgis, Fynn Kirgis, Mike Kirgis";
 - var author = "Frank Kirgis";
 - var url = "https://www.kirgis.de/";
-- var image = "https://www.kirgis.de/media/profile/frank-kirgis-150x150.jpg";
+- var logo_url = "https://www.kirgis.de/media/logos/kirgis-logo-384x384.png";
+- var logo_width = "384";
+- var logo_height = "384";
+- var image_url = "https://www.kirgis.de/media/profile/frank-kirgis-150x150.jpg";
 - var image_width = "150";
 - var image_height = "150";
 - var twitter_creator = "@Frank_Kirgis";
@@ -17,8 +20,8 @@ html(lang='de')
         include includes/head/link.pug
         include includes/head/css.pug
         include includes/head/favicons.pug
-        // include includes/head/startpage-social.pug
-        // include includes/head/startpage-json.pug
+        include includes/head/social.pug
+        // include includes/head/starpage-org-json.pug
     
     body.d-flex.flex-column.h-100
 
