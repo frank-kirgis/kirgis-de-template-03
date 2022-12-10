@@ -3,7 +3,13 @@
 - var description = "";
 - var author = "Frank Kirgis";
 - var url = "https://www.kirgis.de/mike/";
-- var image = "";
+
+- var image_url = "https://www.kirgis.de/media/profile/mike-kirgis-2008-10-12-02-bw.jpg";
+- var image_width = "500";
+- var image_height = "482";
+- var image_copyright = "Frank Kirgis";
+
+- var jobTitle = "Schriftsteller";
 
 doctype html
 html(lang='de')
@@ -13,6 +19,7 @@ html(lang='de')
         include ../includes/head/link.pug
         include ../includes/head/css.pug
         include ../includes/head/favicons.pug
+        include ../includes/head/json-person.pug
 
     body.d-flex.flex-column.h-100
 

@@ -10,8 +10,10 @@
     <link rel="preload" href="/assets/theme/css/styles.css" as="style" />
     <link rel="preload" href="/assets/bootstrap-icons/1.9.1/bootstrap-icons.css" as="style" />
     <link rel="canonical" href="https://www.kirgis.de/mike/" />
+    <!-- css -->
     <link rel="stylesheet" href="/assets/theme/css/styles.css?ver=1" />
     <link rel="stylesheet" href="/assets/bootstrap-icons/1.9.1/bootstrap-icons.css" />
+    <!-- favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
@@ -21,6 +23,31 @@
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <!-- rich snippet person -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "@id": "#author",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.kirgis.de/mike/"
+        },
+        "name": "Mike Kirgis",
+        "jobTitle": "Schriftsteller",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.kirgis.de/media/profile/mike-kirgis-2008-10-12-02-bw.jpg",
+          "width": "500",
+          "height": "482",
+          "copyrightHolder": {
+            "@type": "Person",
+            "name": "\u00a9\u00a0Frank Kirgis"
+          }
+        },
+        "url": "https://www.kirgis.de/mike/"
+      }
+    </script>
   </head>
   <body class="d-flex flex-column h-100">
     <header>

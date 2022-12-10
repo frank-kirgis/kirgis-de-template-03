@@ -1,0 +1,24 @@
+// rich snippet person 
+script(type='application/ld+json').
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "@id": "#author",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "#{url}"
+        },
+        "name": "#{title}",
+        "jobTitle": "#{jobTitle}",
+        "image": {
+            "@type": "ImageObject",
+            "url": "#{image_url}",
+            "width": "#{image_width}",
+            "height": "#{image_height}",
+            "copyrightHolder": {
+                "@type": "Person",
+                "name": "\u00a9\u00a0#{image_copyright}"
+                }
+        },
+        "url": "#{url}"
+    }
