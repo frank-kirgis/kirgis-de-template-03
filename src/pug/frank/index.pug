@@ -1,9 +1,18 @@
 - var locale = "de_DE";
 - var title = "Frank Kirgis";
-- var description = "";
+- var description = "E-Commerce Manager und Vater von 2 Söhnen";
 - var author = "Frank Kirgis";
 - var url = "https://www.kirgis.de/frank/";
-- var image = "";
+
+- var image_url = "https://www.kirgis.de/media/profile/frank-kirgis-400x400.jpg";
+- var image_width = "400";
+- var image_height = "400";
+- var image_copyright = "Frank Kirgis";
+
+- var twitter_creator = "@Frank_Kirgis";
+- var twitter_card = "summary_large_image";
+
+- var jobTitle = "E-Commerce Manager";
 
 doctype html
 html(lang='de')
@@ -13,6 +22,8 @@ html(lang='de')
         include ../includes/head/link.pug
         include ../includes/head/css.pug
         include ../includes/head/favicons.pug
+        include ../includes/head/social.pug
+        include ../includes/head/json-person.pug
 
     body.d-flex.flex-column.h-100
 
