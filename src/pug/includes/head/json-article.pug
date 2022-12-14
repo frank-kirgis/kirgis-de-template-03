@@ -8,7 +8,12 @@ script(type='application/ld+json').
         },
         "headline": "#{headline}",
         "description": "#{description}",
-        "image": "#{image_url}",  
+        "image": {
+            "@type": "ImageObject",
+            "url": "#{image_url}",
+            "width": #{image_width},
+            "height": #{image_height}
+        },
         "author": {
             "@type": "Person",
             "name": "#{author_name}",
@@ -19,6 +24,7 @@ script(type='application/ld+json').
             "name": "#{organization_name}",
             "url": "#{organization_url}",
             "logo": "#{organization_logo}"
+        },
         "logo": {
             "@type": "ImageObject",
             "url": "#{organization_logo}"
