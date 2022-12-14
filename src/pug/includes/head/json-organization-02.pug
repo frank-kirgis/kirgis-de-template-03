@@ -1,0 +1,22 @@
+// rich snippet Organization
+script(type='application/ld+json').
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "@id": "#publisher",
+    "name": "Kirgis",
+    "description": "#{description}",
+    "url": "#{url}",
+    "image": {
+        "@type": "ImageObject",
+        "url": "#{image_url}",
+        "width": #{image_width},
+        "height": #{image_height}
+    },
+    "logo": {
+        "@type": "ImageObject",
+        "url": "#{logo_url}",
+        "width": #{logo_width},
+        "height": #{logo_height}
+    }
+}
