@@ -1,0 +1,29 @@
+script(type='application/ld+json').
+  {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "#{url}"
+        },
+        "headline": "#{headline}",
+        "description": "#{description}",
+        "image": "#{image_url}",  
+        "author": {
+            "@type": "Person",
+            "name": "#{author_name}",
+            "url": "#{author_url}"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "#{organization_name}",
+            "url": "#{organization_url}",
+            "logo": "#{organization_logo}"
+        "logo": {
+            "@type": "ImageObject",
+            "url": "#{organization_logo}"
+        }
+    },
+    "datePublished": "#{datePublished}",
+    "dateModified": "#{dateModified}"
+  }
