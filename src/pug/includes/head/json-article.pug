@@ -12,7 +12,11 @@ script(type='application/ld+json').
             "@type": "ImageObject",
             "url": "#{image_url}",
             "width": #{image_width},
-            "height": #{image_height}
+            "height": #{image_height},
+            "copyrightHolder": {
+                "@type": "Person",
+                "name": "\u00a9\u00a0#{image_copyright}"
+                }
         },
         "author": {
             "@type": "Person",
