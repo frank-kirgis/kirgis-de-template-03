@@ -8,17 +8,34 @@ script(type='application/ld+json').
         },
         "headline": "#{headline}",
         "description": "#{description}",
-        "image": "#{image_url}",  
+        "image": {
+            "@type": "ImageObject",
+            "url": "#{image_url}",
+            "width": #{image_width},
+            "height": #{image_height},
+            "copyrightHolder": {
+                "@type": "Person",
+                "name": "\u00a9\u00a0#{image_copyright}"
+                }
+        },
         "author": {
             "@type": "Person",
             "name": "#{author_name}",
-            "url": "#{author_url}"
+            "url": "#{author_url}",
+            "sameAs": [
+                "https://www.linkedin.com/in/frank-kirgis/",
+                "https://github.com/frank-kirgis",
+                "https://www.instagram.com/frank.kirgis/",
+                "https://twitter.com/Frank_Kirgis",
+                "https://www.facebook.com/frank.kirgis/"
+            ]
         },
         "publisher": {
             "@type": "Organization",
             "name": "#{organization_name}",
             "url": "#{organization_url}",
             "logo": "#{organization_logo}"
+        },
         "logo": {
             "@type": "ImageObject",
             "url": "#{organization_logo}"
