@@ -4,24 +4,26 @@ script(type='application/ld+json').
         "@type": "BlogPosting",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.kirgis.de/frank/"
+            "@id": "#{url}"
         },
-        "headline": "Frank Kirgis",
-        "description": "E-Commerce Manager, Vater, 2 Söhne, getrennt lebend. Hier rein privat unterwegs.",
-        "image": "https://www.kirgis.de/media/profile/frank-kirgis-400x400.jpg",  
+        "headline": "#{headline}",
+        "description": "#{description}",
+        "image": "#{image_url}",  
         "author": {
             "@type": "Person",
-            "name": "Frank Kirgis",
-            "url": "https://www.kirgis.de/frank/"
+            "name": "#{author_name}",
+            "url": "#{author_url}"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Kirgis",
+            "name": "#{organization_name}",
+            "url": "#{organization_url}",
+            "logo": "#{organization_logo}"
         "logo": {
             "@type": "ImageObject",
-            "url": "https://www.kirgis.de/media/logos/kirgis-logo-384x384.png"
+            "url": "#{organization_logo}"
         }
     },
-    "datePublished": "2022-12-13",
-    "dateModified": "2022-12-14"
+    "datePublished": "#{datePublished}",
+    "dateModified": "#{dateModified}"
   }
