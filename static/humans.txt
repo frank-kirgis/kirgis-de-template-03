@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Webdevelopment / Webdesign / Editor: Frank Kirgis
+  Contact: frank.kirgis [at] gmail.com
+
+  From: Germany
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
+  Bootstrap 5
+  JAMStack
+  jQuery
