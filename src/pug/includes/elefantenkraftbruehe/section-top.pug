@@ -6,11 +6,11 @@ section.py-5#top
 
             .col-lg-3
 
-                .d-flex.align-items-center.mt-lg-5.mb-4
+                .d-flex.align-items-center.mt-lg-2.mb-4
 
-                    img.img-fluid.rounded-circle(src='/media/profile/frank-kirgis-40x40.jpg', alt='Frank Kirgis')
+                    img.img-fluid.rounded-circle(src= author_image, alt= author_name)
                     .ms-3
-                        .fw-bold Frank Kirgis
+                        .fw-bold #{author_name}
                         .text-muted Kurioses
 
             .col-lg-9
@@ -21,9 +21,10 @@ section.py-5#top
 
                         h1.display-5.text-black.mb-2 #{title}
 
-
                     figure.mb-4
-                        img.img-fluid(src='/media/elefantenkraftbruehe.jpg', alt='Elefantenkraftbrühe')
+                        img.img-fluid(src= image_url, alt= image_alt)
+
+                    p.text-muted.fs-6 Foto: #{image_copyright}
 
                     section.mb-5
 
