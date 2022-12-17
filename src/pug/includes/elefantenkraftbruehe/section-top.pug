@@ -10,7 +10,9 @@ section.py-5#top
 
                     img.img-fluid.rounded-circle(src= author_image, alt= author_name)
                     .ms-3
-                        .fw-bold #{author_name}
+                        .fw-bold <a class="nav-link" href="#{author_url_local}">#{author_name}</a>
+
+
                         .text-muted Kurioses
 
             .col-lg-9
@@ -24,7 +26,7 @@ section.py-5#top
                     figure.mb-4
                         img.img-fluid(src= image_url, alt= image_alt)
 
-                    p.text-muted.fs-6 Foto: #{image_copyright}
+                    p.text-muted.fs-6 Foto: <i class="bi-link"></i> <a class="text-reset" href="#{image_copyright_url}" target="_blank" rel="noopener">#{image_copyright}</a>
 
                     section.mb-5
 
